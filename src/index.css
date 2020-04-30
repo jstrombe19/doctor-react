@@ -11,3 +11,58 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+#favorite-doctors-container {
+  background-color: rgb(127, 18, 18);
+  height: 300px;
+  padding-top: 20px;
+  padding-bottom: 80px;
+}
+
+#favorite-doctors-container #title {
+  margin-left: 20px;
+  color: white;
+}
+
+#favorite-doctors {
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+  justify-content: center;
+}
+
+#favorite-doctors-container .doctor-card {
+  box-shadow: 5px 5px 5px rgb(65, 9, 9);
+}
+
+#doctor-list {
+  background-color: rgb(244, 241, 229);
+  height: 450px;
+  padding: 20px;
+}
+
+#doctor-list .doctor-card {
+  box-shadow: 5px 5px 5px rgb(104, 100, 86);
+}
+
+#doctor-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.doctor-card {
+  width: 200px;
+  height: 250px;
+  background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+  padding: 15px;
+  border-radius: 5px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+img {
+  max-width: 150px;
+}
