@@ -38,16 +38,16 @@ export default class App extends React.Component {
     this.setState({doctors})
   }
 
-  dishcargeDoc = (event, id) => {
-    console.log(event)
-    event.stopPropagation();
+  dishcargeDoc = (elephantToeNails, doc) => {
+    console.log(elephantToeNails)
+    elephantToeNails.stopPropagation();
     const updatedDoctorList = this.state.doctors.filter(doctor => {
-      return doctor.id !== id 
+      return doctor !== doc 
     })
     this.setState({
       doctors: updatedDoctorList
     })
-    fetch(`http://localhost:3000/doctors/${id}`, {
+    fetch(`http://localhost:3000/doctors/${doc.id}`, {
       method: 'DELETE',
       headers: {
         'Content-Type': 'application/json'
