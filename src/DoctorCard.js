@@ -6,6 +6,7 @@ export default function DoctorCard(props) {
       <img src={props.doctor.image} alt={props.doctor.name} />
       <h3>{props.doctor.name}</h3>
       <h4>{props.doctor.specialty}</h4>
+      <button onClick={(event) => props.dischargeDoc(event,props.doctor.id)}>Discharge</button>
     </div>
   )
 }
